@@ -1,3 +1,9 @@
 stone.dSYM/Contents/Info.plist
 stone.dSYM/Contents/Resources/DWARF/stone
 stone
+stone.obj
+stone.ilk
+stone.pdb
+vc140.pdb
+stone.exe
+.vscode/*

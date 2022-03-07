@@ -3,19 +3,17 @@
 	"tasks": [
 		{
 			"type": "shell",
-			"label": "C/C++: gcc build active file",
-			"command": "/usr/bin/gcc",
+			"label": "cl.exe build active file",
+			"command": "cl.exe",
 			"args": [
-				"-g",
-				"${file}",
-				"-o",
-				"${fileDirname}/${fileBasenameNoExtension}"
+				"/Zi",
+				"/EHsc",
+				"/Fe:",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"${file}"
 			],
-			"options": {
-				"cwd": "${workspaceFolder}"
-			},
 			"problemMatcher": [
-				"$gcc"
+				"$msCompile"
 			],
 			"group": {
 				"kind": "build",

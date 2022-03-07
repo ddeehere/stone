@@ -5,17 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "gcc - Build and debug active file",
-            "type": "cppdbg",
+            "name": "cl.exe Build and debug active file",
+            "type": "cppvsdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": ["I", 7, 7],
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
-            "MIMode": "lldb",
-            "preLaunchTask": "C/C++: gcc build active file"
+            "preLaunchTask": "cl.exe build active file"
         }
     ]
 }
